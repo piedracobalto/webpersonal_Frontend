@@ -1,0 +1,28 @@
+{%  extends 'core/base.html' %}
+
+{% block title %}Acerca de{%  endblock %}
+
+{% block background %} {% load static %} {% static 'core/img/about-bg.jpg' %} {% endblock %}
+
+
+{% block headers %} 
+
+<h1>Pedro Cuomo Ghio</h1>
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+
+{% endblock %}
+
+{% block content %} 
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/foto_presentacion.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Pedro Cuomo Ghio</h2>   
+        <p>Nacido en Ciudad Autonoma de Buenos Aires. Soy programador Backend</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+    </div>
+</div>
+{%  endblock %}
+
